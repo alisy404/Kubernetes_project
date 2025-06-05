@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-configmap
+data:
+  database_url: "mongodb-service"
+  database_name: "mydatabase"
+  database_username: "myuser"
+  username: "myuser"
+  database_password: "mypassword"
+  database_port: "27017"
+  database_auth_source: "admin"
+  database_replica_set: "rs0"
+  database_ssl: "false"
+  database_ssl_ca_file: "/etc/ssl/certs/ca.pem"
+  database_ssl_cert_file: "/etc/ssl/certs/client.pem"
+  database_ssl_key_file: "/etc/ssl/certs/client-key.pem"
